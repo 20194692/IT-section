@@ -11,6 +11,8 @@
         <a href="studentlist.html"target="_blank">student list</a>
         <hr>
         <form action="#" method="post">
+            <fieldset>
+            <legend style="text-align: center;">personal information</legend>
             <p>
             <label>
                 Full name:
@@ -25,15 +27,37 @@
         </p>
         <p>
             <label>
+            Gender:
+            <input type="radio" name="Gender" value="male"> Male
+            <input type="radio" name="Gender" value="female"> Female
+        </label>
+        </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend style="text-align: center;">Contact information</legend>
+        <p>
+            <label>
                 Address:
                 <textarea rows="10" cols="15" name="txtarea"></textarea>
             </label>
         </p>
         <p>
-            Gender:
-            <input type="radio" name="Gender" value="male"> Male
-            <input type="radio" name="Gender" value="female"> Female
+            <label>
+                Phone number:
+                <input type="tel" name="txtPhone">
+            </label>
         </p>
+        <p>
+            <label>
+                Email:
+                <input type="email" name="txtEmail">
+            </label>
+        </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend style="text-align: center;">Academic information</legend>
         <p>
             <label>
                 Faculty:
@@ -44,9 +68,10 @@
                 </select> 
             </label>
         </p>
+    </fieldset>
         <p>
             <label>
-                <input type="submit">
+                <input type="submit" class="button" value="Add" name="add">
             </label>
         </p>
         </form>
